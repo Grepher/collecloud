@@ -1,0 +1,341 @@
+
+drop database ayuda;
+create database ayuda;
+use ayuda;
+
+create table nombres(id_nombre int(5) primary key auto_increment,nombre varchar(30))Engine=innodb;
+
+create table apellidos(id_apellido int(5) primary key auto_increment,apellido varchar(30))Engine=innodb;
+
+create table correos(id_correos int(5) primary key auto_increment,correo varchar(30))Engine=innodb;
+
+create table manzanas(id_manzanas int(5) primary key auto_increment,manzana varchar(60))Engine=innodb;
+
+create table prueba(id int(8) primary key auto_increment, nombre varchar(50));
+
+drop table prueba;
+create table prueba(id int(8) primary key auto_increment, nombre varchar(50));
+
+
+
+static String nombresN[] = { 
+			"Sofía"
+			,"Valentina"
+			,"Isabella"
+			,"Camila"
+			,"Valeria"
+			,"Mariana"
+			,"Gabriela"
+			,"Sara"
+			,"Daniella"
+			,"MaríaJosé"
+			,"Victoria"
+			,"Martina"
+			,"Luciana"
+			,"Ximena"
+			,"María"
+			,"Fernanda"
+			,"Lucía"
+			,"Natalia"
+			,"Catalina"
+			,"Mía"
+			,"Fernanda"
+			,"Nicole"
+			,"Julieta"
+			,"Abril"
+			,"Samantha"
+			,"Andrea"
+			,"Antonella"
+			,"Emily"
+			,"Emilia"
+			,"Alessandra"
+			,"Juana"
+			,"Antonia"
+			,"Juliana"
+			,"Alejandra"
+			,"Guadalupe"
+			,"Emma"
+			,"Regina"
+			,"Danna"
+			,"Abigail"
+			,"Agustina"
+			,"Renata"
+			,"Allison"
+			,"Brianna"
+			,"Valery"
+			,"Florencia"
+			,"Constanza"
+			,"Josefina"
+			,"Ashley"
+			,"Laura"
+			,"Manuela"
+			,"Zoe"
+			,"María"
+			,"Camila"
+			,"Morena"
+			,"Amanda"
+			,"María"
+			,"Adriana"
+			,"Alexa"
+			,"Génesis"
+			,"Bianca"
+			,"Jazmín"
+			,"Melanie"
+			,"Alma"
+			,"Micaela"
+			,"Carla"
+			,"Delfina"
+			,"Maite"
+			,"María"
+			,"Paula"
+			,"Luna"
+			,"Paulina"
+			,"Carolina"
+			,"Ariana"
+			,"Mariángel"
+			,"Miranda"
+			,"Ana"
+			,"Angelina"
+			,"Violeta"
+			,"Isabel"
+			,"Candela"
+			,"Romina"
+			,"Josefa"
+			,"Milagros"
+			,"Olivia"
+			,"Fátima"
+			,"Pilar"
+			,"Isidora"
+			,"Lola"
+			,"Michelle"
+			,"Ivanna"
+			,"Fabiana"
+			,"Fiorella"
+			,"Luana"
+			,"Aitana"
+			,"Rocío"
+			,"Salomé"
+			,"Malena"
+			,"Paola"
+			,"Paloma"
+			,"Diana"
+			,"Kimberly"
+			,"Vanessa"
+
+			,"Santiago"
+			,"Sebastián"
+			,"Matías"
+			,"Nicolás"
+			,"Samuel"
+			,"Alejandro"
+			,"Mateo"
+			,"Diego"
+			,"Benjamín"
+			,"Daniel"
+			,"Joaquín"
+			,"Tomás"
+			,"Gabriel"
+			,"Lucas"
+			,"Martín"
+			,"Emmanuel"
+			,"Alexander"
+			,"David"
+			,"Emiliano"
+			,"Carlos"
+			,"JuanJosé"
+			,"Andrés"
+			,"Felipe"
+			,"Ignacio"
+			,"Leonardo"
+			,"Adrián"
+			,"Francisco"
+			,"Rodrigo"
+			,"Alvaro"
+			,"MiguelÁngel"
+			,"Fernando"
+			,"Santino"
+			,"Bautista"
+			,"Agustín"
+			,"JuanPablo"
+			,"Vicente"
+			,"Thiago"
+			,"Maximiliano"
+			,"Pablo"
+			,"Eduardo"
+			,"Christopher"
+			,"Kevin"
+			,"Isaac"
+			,"Juan"
+			,"Aarón"
+			,"Dylan"
+			,"Jesús"
+			,"Esteban"
+			,"Manuel"
+			,"Juan"
+			,"Sebastián"
+			,"Franco"
+			,"Lautaro"
+			,"Miguel"
+			,"JuanDavid"
+			,"Ricardo"
+			,"Bruno"
+			,"Luciano"
+			,"Juan"
+			,"Emilio"
+			,"JuanEsteban"
+			,"Julián"
+			,"Valentino"
+			,"Javier"
+			,"Joshua"
+			,"Rafael"
+			,"Jorge"
+			,"José"
+			,"Luis"
+			,"Diego"
+			,"Alejandro"
+			,"Gael"
+			,"Óscar"
+			,"Nahuel"
+			,"Máximo"
+			,"Axel"
+			,"Facundo"
+			,"Jonathan"
+			,"Ian"
+			,"Josué"
+			,"Camilo"
+			,"Sergio"
+			,"Jerónimo"
+			,"Álex"
+			,"Mauricio"
+			,"JuanCamilo"
+			,"Alonso"
+			,"Anthony"
+			,"Dante"
+			,"Christian"
+			,"Simón"
+			,"Patricio"
+			,"Héctor"
+			,"Iván"
+			,"Marcos"
+			,"Ramiro"
+			,"Alberto"
+			,"Matthew"
+			,"Pedro"
+			,"Mario"
+			,"Alan"
+			,"Arturo"};
+
+--------------------
+String 
+González
+Rodríguez
+Gómez
+Fernández
+López
+Díaz
+Martínez
+Pérez
+García
+Sánchez
+Romero
+Sosa
+Álvarez
+Torres
+Ruiz
+Ramírez
+Flores
+Acosta
+Benítez
+Medina
+Suárez
+Herrera
+Aguirre
+Pereyra
+Gutiérrez
+Jiménez
+Molina
+Silva
+Castro
+Rojas
+Ortiz
+Núñez
+Luna
+Juárez
+Cabrera
+Ríos
+Ferreyra
+Godoy
+Morales
+Domínguez
+Moreno
+Peralta
+Vega
+Carrizo
+Quiroga
+Castillo
+Ledesma
+Muñoz
+Ojeda
+Ponce
+Vera
+Vázquez
+Villalba
+Cardozo
+Navarro
+Ramos
+Arias
+Coronel
+Córdoba
+Figueroa
+Correa
+Cáceres
+Vargas
+Maldonado
+Mansilla
+Farías
+Rivero
+Paz
+Miranda
+Roldán
+Méndez
+Lucero
+Cruz
+Hernández
+Agüero
+Páez
+Blanco
+Mendoza
+Barrios
+Escobar
+Ávila
+Soria
+Leiva
+Acuña
+Martín
+Maidana
+Moyano
+Campos
+Olivera
+Duarte
+Soto
+Franco
+Bravo
+Valdez
+Toledo
+Velázquez
+Montenegro
+Leguizamón
+Chávez
+Arce
+---------------------
+S.A.S. (Sociedad por Accionbal 	es Simplificada)
+S.A. (Sociedad Anónima: ˜ PLC (RU)
+S.A. de C.V. (Sociedad Anónima de Capital Variable)
+S.A.B. (Sociedad Anónima Bursátil)
+S. de P.R. de R.L. (Sociedad de Produccción Rural de Responsabilidad Limitada)
+S. de R.L. (Sociedad de Responsabilidad Limitada): ˜ Ltd. (RU)
+S. en N.C. (Sociedad en Nombre Colectivo)
+S. Coop. (Sociedad Cooperativa)
+S.C. (Sociedad Civil)
+S.S.S. Sociedad de Solidaridad Social
+A.C. (Asociación Civil)
