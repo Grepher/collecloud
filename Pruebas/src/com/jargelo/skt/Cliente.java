@@ -1,5 +1,7 @@
 package com.jargelo.skt;
 
+import com.jargelo.net.modelo.Conexion;
+
 public class Cliente{
 	private int ID;
 	private String nombre;

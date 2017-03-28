@@ -5,6 +5,8 @@ import java.util.Date;
 import java.util.NoSuchElementException;
 import java.util.Scanner;
 
+import com.jargelo.net.modelo.Conexion;
+
 //import adiciones.// Logger;
 
 import java.io.BufferedWriter;
